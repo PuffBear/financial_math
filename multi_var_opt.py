@@ -1,3 +1,11 @@
+'''
+A relatively small program that works on optimizing the portfolio variance for a two asset portfolio
+from among hundreds of stock totalling a few thounsand pairings. 
+
+The objective is to get the portfolio variance minimum when having two stocks in the same portfolio and
+then allocating funds depending on such achieved minimu portfolio variance.
+'''
+
 import yfinance as yf
 import numpy as np
 import scipy.optimize as sco
