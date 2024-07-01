@@ -27,13 +27,13 @@ def covariance(returns1, returns2):
     return covariance
 
 # Download data
-data_1 = yf.download('EQUITASBNK.NS', start="2021-11-01", end="2024-06-30")
+data_1 = yf.download('PATELENG.NS', start="2021-11-01", end="2024-06-30")
 data_1 = data_1.drop(["High", "Low", "Open", "Adj Close", "Volume"], axis=1)
 data_1 = data_1.dropna()
 returns_1 = data_1['Close'].pct_change().dropna()
 variance_1 = variance(returns_1)
 
-data_2 = yf.download('ABCAPITAL.NS', start="2021-11-01", end="2024-06-30")
+data_2 = yf.download('CAPACITE.NS', start="2021-11-01", end="2024-06-30")
 data_2 = data_2.drop(["High", "Low", "Open", "Adj Close", "Volume"], axis=1)
 data_2 = data_2.dropna()
 returns_2 = data_2['Close'].pct_change().dropna()
