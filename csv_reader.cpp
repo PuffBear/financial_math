@@ -42,7 +42,7 @@ int main()
         {
             std::cout << " ===== Read Line =====" << std::endl;
 			tokens = tokenise(line, ',');
-			if(tokens.size() != 16) //Bad Line
+			if(tokens.size() != 16) //faulty line
 			{
 				std::cout << "Bad Line" << std::endl;
 				continue;
