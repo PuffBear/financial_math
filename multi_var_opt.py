@@ -38,7 +38,7 @@ def download_data(ticker, start_date, end_date):
     returns = data.pct_change().dropna()
     return returns
 
-tickers = ['FINPIPE.NS', 'PRINCEPIPE.NS', 'MAXHEALTH.NS', 'BOSCHLTD.NS', 'EICHERMOT.NS', 'INDUSINDBNK.NS', 'LICHSGFIN.NS', 'SHREECEM.NS', 'MAHSEAMLES.NS', 'TITAGARH.NS', 'BEML.NS', 'ICICIBANK.NS', 'SBIN.NS', 'NESTLEIND.NS', 'RELIANCE.NS']
+tickers = ['FINPIPE.NS', 'PRINCEPIPE.NS', 'MAXHEALTH.NS', 'LICHSGFIN.NS', 'MAHSEAMLES.NS', 'TITAGARH.NS', 'ICICIBANK.NS', 'SBIN.NS', 'RELIANCE.NS']
 
 start_date = "2021-11-01"
 end_date = "2024-08-09"
